@@ -33,19 +33,19 @@
   replace:
     dest: "{{ VIYA_PLAYBOOK_DIR }}/inventory.ini"
     regexp: '^\[ComputeServer\]\ndeployTarget'
-    replace: '[ComputeServer]\n{{ groups["ViyaServicesServers"]|unique|join("\n") }}'
+    replace: '[ComputeServer]\n{{ groups["ProgrammingServicesServers"]|unique|join("\n") }}'
 
 - name: Programming - programming
   replace:
     dest: "{{ VIYA_PLAYBOOK_DIR }}/inventory.ini"
     regexp: '^\[programming\]\ndeployTarget'
-    replace: '[programming]\n{{ groups["ViyaServicesServers"]|unique|join("\n") }}'
+    replace: '[programming]\n{{ groups["ProgrammingServicesServers"]|unique|join("\n") }}'
 
 - name: Programming - spre
   replace:
     dest: "{{ VIYA_PLAYBOOK_DIR }}/inventory.ini"
     regexp: '^\[spre\]\ndeployTarget'
-    replace: '[spre]\n{{ groups["ViyaServicesServers"]|unique|join("\n") }}'
+    replace: '[spre]\n{{ groups["ProgrammingServicesServers"]|unique|join("\n") }}'
 
 - name: Programming - CommandLine
   replace:
@@ -57,49 +57,49 @@
   replace:
     dest: "{{ VIYA_PLAYBOOK_DIR }}/inventory.ini"
     regexp: '^\[connect\]\ndeployTarget'
-    replace: '[connect]\n{{ groups["ViyaServicesServers"]|unique|join("\n") }}'
+    replace: '[connect]\n{{ groups["ProgrammingServicesServers"]|unique|join("\n") }}'
 
 - name: Programming - pcfile
   replace:
     dest: "{{ VIYA_PLAYBOOK_DIR }}/inventory.ini"
     regexp: '^\[pcfile\]\ndeployTarget'
-    replace: '[pcfile]\n{{ groups["ViyaServicesServers"]|unique|join("\n") }}'
+    replace: '[pcfile]\n{{ groups["ProgrammingServicesServers"]|unique|join("\n") }}'
 
 - name: Programming - platform
   replace:
     dest: "{{ VIYA_PLAYBOOK_DIR }}/inventory.ini"
     regexp: '^\[platform\]\ndeployTarget'
-    replace: '[platform]\n{{ groups["ViyaServicesServers"]|unique|join("\n") }}'
+    replace: '[platform]\n{{ groups["ProgrammingServicesServers"]|unique|join("\n") }}'
 
 - name: Programming - Operations
   replace:
     dest: "{{ VIYA_PLAYBOOK_DIR }}/inventory.ini"
     regexp: '^\[Operations\]\ndeployTarget'
-    replace: '[Operations]\n{{ groups["ViyaServicesServers"]|unique|join("\n") }}'
+    replace: '[Operations]\n{{ groups["ProgrammingServicesServers"]|unique|join("\n") }}'
 
 - name: Programming - psqllib
   replace:
     dest: "{{ VIYA_PLAYBOOK_DIR }}/inventory.ini"
     regexp: '^\[psqllib\]\ndeployTarget'
-    replace: '[psqllib]\n{{ groups["ViyaServicesServers"]|unique|join("\n") }}'
+    replace: '[psqllib]\n{{ groups["ProgrammingServicesServers"]|unique|join("\n") }}'
 
 - name: Programming - psqllib1
   replace:
     dest: "{{ VIYA_PLAYBOOK_DIR }}/inventory.ini"
     regexp: '^\[psqllib1\]\ndeployTarget'
-    replace: '[psqllib1]\n{{ groups["ViyaServicesServers"]|unique|join("\n") }}'
+    replace: '[psqllib1]\n{{ groups["ProgrammingServicesServers"]|unique|join("\n") }}'
 
 - name: Programming - psqlodbc
   replace:
     dest: "{{ VIYA_PLAYBOOK_DIR }}/inventory.ini"
     regexp: '^\[psqlodbc\]\ndeployTarget'
-    replace: '[psqlodbc]\n{{ groups["ViyaServicesServers"]|unique|join("\n") }}'
+    replace: '[psqlodbc]\n{{ groups["ProgrammingServicesServers"]|unique|join("\n") }}'
 
 - name: Programming - psqlodbc1
   replace:
     dest: "{{ VIYA_PLAYBOOK_DIR }}/inventory.ini"
     regexp: '^\[psqlodbc1\]\ndeployTarget'
-    replace: '[psqlodbc1]\n{{ groups["ViyaServicesServers"]|unique|join("\n") }}'
+    replace: '[psqlodbc1]\n{{ groups["ProgrammingServicesServers"]|unique|join("\n") }}'
 
 
 # Stateful Services
