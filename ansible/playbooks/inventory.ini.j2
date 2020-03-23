@@ -44,7 +44,6 @@ sas_servers
 
 [NeedMountSASInstallDrive:children]
 sas_servers
-ProgrammingServicesServers
 
 [NeedMountUserlibDrive:children]
 {% if CAS_INSTANCE_COUNT | int > 1 %}
@@ -62,6 +61,7 @@ ViyaServicesServers
 
 [sas_servers:children]
 sas_services
+ProgrammingServicesServers
 CASControllerServer
 CASWorkers
 
