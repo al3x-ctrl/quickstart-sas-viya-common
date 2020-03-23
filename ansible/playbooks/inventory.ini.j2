@@ -1,3 +1,4 @@
+programming
 services
 controller
 localhost ansible_connection=local
@@ -12,7 +13,7 @@ worker{{ "{:02d}".format(i + 1) }}
 services
 
 [ProgrammingServicesServers]
-services
+programming
 
 [MirrorServer]
 services
@@ -43,6 +44,7 @@ sas_servers
 
 [NeedMountSASInstallDrive:children]
 sas_servers
+ProgrammingServicesServers
 
 [NeedMountUserlibDrive:children]
 {% if CAS_INSTANCE_COUNT | int > 1 %}
