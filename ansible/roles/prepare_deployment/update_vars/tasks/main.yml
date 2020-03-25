@@ -48,6 +48,7 @@
         4: LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$ODBCHOME/lib:/opt/sas/spre/home/lib64
         5: PATH=$PATH:/opt/sas/spre/home/lib64/psql
         6: PGCLIENTENCODING=UTF-8
+        7: COMPUTESERVER_TMP_PATH=/sastmp/saswork
 
 - name: set CAS Settings
   replace:
